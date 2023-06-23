@@ -19,6 +19,10 @@ const Register = () => {
         <p>
           Ready to watch? Enter your email to create or restart your membership.
         </p>
+        <div className="input">
+          <input type="email" placeholder="email address" />
+          <button className="registerButton">Get Started</button>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .register {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(
       to bottom,
@@ -7,25 +7,45 @@
       rgba(0, 0, 0, 1) 100%
     ),
     url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
-}
-.top {
-  .wrapper {
-    padding: 20px 50px;
+
+  .top {
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 40px;
+      }
+      .loginButton {
+        background-color: red;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-  }
-  .logo {
-    height: 40px;
-  }
-  .loginButton {
-    background-color: red;
-    border: none;
+    justify-content: center;
     color: white;
-    border-radius: 5px;
-    padding: 5px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      margin: 20px;
+    }
   }
 }
